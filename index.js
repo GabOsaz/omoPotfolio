@@ -4,11 +4,11 @@ const time = document.getElementById('time'),
   showcase = document.querySelector('.showcase'),
   showDetails = document.querySelector('.showDetails');
 
-  showDetails.addEventListener('mouseover', addDet)
+//   showDetails.addEventListener('mouseover', addDet)
 
-  function addDet(e) {
+//   function addDet(e) {
 
-  }
+//   }
 
 // Options
 const showAmPm = true;
@@ -107,6 +107,10 @@ function setName(e) {
 
 name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
+
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
+});
 
 // Run
 showTime();

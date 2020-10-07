@@ -1,19 +1,42 @@
 body {
-    background: rgba(0, 0, 0, 0.9);
+    /* background: rgba(0, 0, 0, 0.9); */
+    background: rgb(32, 28, 41);
     margin: 0;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Philosopher', serif;
+    font-weight: 200;
   }
-  
+
+  /* .container {
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory
+  } */
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    }
+
+    .showcase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
   .showcase::after {
     content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
     background-image: url(img/evening.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: block;
+    /* display: block; */
     filter: blur(10px);
     -webkit-filter: blur(10px);
     transition: all 1000ms;
@@ -32,11 +55,15 @@ body {
   .content {
     position: absolute;
     z-index: 1;
-    top: 10%;
-    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* top: 10%;
+    left: 40%;
     margin-top: 105px;
-    margin-left: -145px;
-    width: 300px;
+    margin-left: -145px; */
+    /* width: 500px; */
     height: 350px;
     text-align: center;
     transition: all 1000ms;
@@ -55,10 +82,24 @@ body {
     font-size: 2.2rem;
     margin-top: 1rem;
   }
+
+  #name, #greeting {
+    background: -webkit-linear-gradient( #00ff55,#e5712e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   
   .content .text {
     line-height: 1.7;
     margin-top: 1rem;
+    font-family: 'Tangerine', serif;
+    font-size: 3.8rem;
+    font-weight: 900;
+    /* color: #9b9898; */
+    background: -webkit-linear-gradient(#ffffff,#9b9898);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 1px rgb(248, 245, 245);
   }
   
   #time {
@@ -82,25 +123,113 @@ body {
   }
 
   .imgParent {
-      position: relative
+    position: relative;
   }
 
   .projImg {
-      width: 100%;
+    width: 100%;
+    height: 150px
   }
 
-  .details  {
-    content: 'Some text, some text';
+  .projName {
+    color: rgb(145, 255, 0);
+    font-size: 1.2rem;
+  }
+
+  .imgParent1::after  {
+    content: 'Technologies Featured: React, React-Redux, Context API, React Hooks, Bootstrap CSS, Google Maps API, NodeJs, ExpressJs, JWT, MongoDB Atlas, Mongoose';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    color: red;
-    transition: all 1s ease-out;
-    background: rgba(0, 0, 0, 0.9);
+    color: transparent;
+    
+    transition: all 1s ease-in-out;
     height: 100%;
     margin: 0;
     z-index: 1
+  }
+
+  .imgParent2::after  {
+    content: 'Technologies Featured: React, Context API, React Hooks, TailwindCss, NodeJs, ExpressJs, JWT, React Security - Lazy Loading, Protected Routing; MongoDB Atlas, Mongoose';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    transition: all 1s ease-in-out;
+    height: 100%;
+    margin: 0;
+    z-index: 1
+  }
+
+  .imgParent3::after  {
+    content: 'Technologies Featured: React, React-Redux, React Hooks, Bootstrap CSS. NodeJs, ExpressJs. App development still in progress...';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    
+    transition: all 1s ease-in-out;
+    height: 100%;
+    margin: 0;
+    z-index: 1
+  }
+
+  .imgParent4::after  {
+    content: 'Technologies Featured: HTML5, CSS3, SASS';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    
+    transition: all 1s ease-in-out;
+    height: 100%;
+    margin: 0;
+    z-index: 1
+  }
+
+  .imgParent5::after  {
+    content: 'Technologies Featured: HTML5, CSS3';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    transition: all 1s ease-in-out;
+    height: 100%;
+    margin: 0;
+    z-index: 1
+  }
+
+  .imgParent:hover::after {
+      animation-name: example;
+      animation-duration: 1s;
+      transition: all 1s ease-out;
+      background: rgba(0, 0, 0, 0.9);
+      color: rgb(145, 255, 0);
+  }
+
+  @keyframes example {
+  from {transform: translate(0, 75px);}
+  to {transform: translate(0, 0);}
+}
+
+.btn-light {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    background: linear-gradient(to top left,#ff8a00,#e52e71);
+    color: black;
+  }
+
+  .btn-light:hover {
+    background-image: linear-gradient(to top left,#ff8a00,#e52e71);
+    color: #e6e6e9;
+    transition: all .5s ease-out;
   }
 
   .projTech {
@@ -109,12 +238,20 @@ body {
       gap: 20px;
   }
 
+  .contact {
+      text-align: center;
+      font-size: 3rem;
+      background: -webkit-linear-gradient( #00ff55,#e5712e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
   .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
 
   .boxes div {
@@ -125,9 +262,61 @@ body {
   }
 
   .boxes div:hover {
-      background: rgb(98, 0, 255);
+    background: linear-gradient(#ff8a00,#e52e71);
   }
 
-  /* .projTech > li {
-      margin: 0 15px;
-  } */
+  .footer {
+    border-top: 1px solid white;
+    padding: 30px;
+    margin-top: -100px
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+}
+
+.repl {
+    width: 40.5px;
+    background-color: transparent;
+  }
+
+  @media (max-width: 660px) {
+      #time {
+          display: none
+      }
+  }
+
+  @media (max-width: 500px) {
+     #greeting, #name {
+        font-size: 25.3px;
+    }
+
+    .content .text {
+        font-size: 2.3rem;
+    }
+
+    .contact {
+        font-size: 2rem
+    }
+
+    .footer {
+        margin-top: -15rem
+    }
+
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer ul li {
+        margin-top: 8px;
+    }
+
+    .boxes div {
+        font-size: 1.2rem;
+    }
+  }

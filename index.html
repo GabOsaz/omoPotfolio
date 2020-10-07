@@ -4,11 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Omo's Portfolio</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher" />  
+        
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" ></script>
     </head>
     <body>
-        <header class="showcase" id='showPix'>
-            <div class="content">
+        <div class='container'>
+        <header class="showcase rellax" data-rellax-speed="-10" id='showPix'>
+            <div class="content rellax" data-rellax-speed="30">
               <img src="img/portrait.png" class="logo" alt="Omo">
               <h1>
                 <span id="greeting"> </span>
@@ -19,100 +29,131 @@
               </div>
             </div>
         </header>
-        <section id = 'portfolio'>
+        <section class="rellax" data-rellax-speed="5" id ='portfolio'>
             <h4 id="time"></h4>
-            <h1> Some of My Projects </h1>
+            <h1 class='contact'> Some of My Projects </h1>
             <div class="projects">
                 <div>
-                    <div class='imgParent'>
-                        <img src='img/morning.jpg' alt='project 1' class='projImg'/>
-                        <p class='details' id='showDetails'> Some text and some more text </p>
+                    <div class='imgParent imgParent1'>
+                        <img src='img/luxClient.PNG' alt='project 1' class='projImg'/>
                     </div>
-                    <h2> Project name </h2>
-                    <p> Made with: 
-                        <ul class='projTech'>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                        </ul>
-                    </p>
+                    <h2 class='projName'> Lux Event Center Client </h2>
+                    <a href="https://lux-event-client.web.app/" target="_blank" class="btn-light">
+                        <i class="fas fa-eye"></i> View
+                    </a>
+                    <a href="https://github.com/GabOsaz/LuxEvents" target="_blank" class="btn-light">
+                        <i class="fab fa-github"></i> Github
+                    </a>
                 </div>
                 <div>
-                    <img src='img/morning.jpg' alt='project 1' class='projImg'/>
-                    <h2> Project name </h2>
-                    <p> Made with: 
-                        <ul class='projTech'>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                        </ul>
-                    </p>
+                    <div class='imgParent imgParent2'>
+                        <img src='img/luxAdmin.PNG' alt='project 1' class='projImg'/>
+                    </div>
+                    <h2 class='projName'> Lux Event Center Admin </h2>
+                    <a href="https://lux-event-admin.web.app/" target="_blank" class="btn-light">
+                        <i class="fas fa-eye"></i> View
+                    </a>
+                    <a href="https://github.com/GabOsaz/LuxEvents" target="_blank" class="btn-light">
+                        <i class="fab fa-github"></i> Github
+                    </a>
                 </div>
                 <div>
-                    <img src='img/morning.jpg' alt='project 1' class='projImg'/>
-                    <h2> Project name </h2>
-                    <p> Made with: 
-                        <ul class='projTech'>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                        </ul>
-                    </p>
+                    <div class='imgParent imgParent3'>
+                        <img src='img/g3-messenger.PNG' alt='project 1' class='projImg'/>
+                    </div>
+                    <h2 class='projName'> Messaging Web App </h2>
+                    <a href="https://g3-messenger.netlify.app/" target="_blank" class="btn-light">
+                        <i class="fas fa-eye"></i> View
+                    </a>
+                    <a href="https://github.com/GabOsaz/G3-Messenger" target="_blank" class="btn-light">
+                        <i class="fab fa-github"></i> Github
+                    </a>
                 </div>
                 <div>
-                    <img src='img/morning.jpg' alt='project 1' class='projImg'/>
-                    <h2> Project name </h2>
-                    <p> Made with: 
-                        <ul class='projTech'>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                        </ul>
-                    </p>
+                    <div class='imgParent imgParent4'>
+                        <img src='img/awesomeShoe.PNG' alt='project 1' class='projImg'/>
+                    </div>
+                    <h2 class='projName'> Awesome Shoe Sale </h2>
+                    <a href="https://gabosaz.github.io/awesomeShoe/" target="_blank" class="btn-light">
+                        <i class="fas fa-eye"></i> View
+                    </a>
+                    <a href="https://github.com/GabOsaz/awesomeShoe" target="_blank" class="btn-light">
+                        <i class="fab fa-github"></i> Github
+                    </a>
                 </div>
                 <div>
-                    <img src='img/morning.jpg' alt='project 1' class='projImg'/>
-                    <h2> Project name </h2>
-                    <p> Made with: 
-                        <ul class='projTech'>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                            <li> react </li>
-                        </ul>
-                    </p>
+                    <div class='imgParent imgParent5'>
+                        <img src='img/instagram.PNG' alt='project 1' class='projImg'/>
+                    </div>
+                    <h2 class='projName'> Instagram Clone </h2>
+                    <a href="https://gabosaz.github.io/Instagram-Demo/" target="_blank" class="btn-light">
+                        <i class="fas fa-eye"></i> View
+                    </a>
+                    <a href="https://github.com/GabOsaz/Instagram-Demo" target="_blank" class="btn-light">
+                        <i class="fab fa-github"></i> Github
+                    </a>
                 </div>
             </div>
         </section>
-        <main id="contact">
-            <h1 class="lg-heading">
-              Contact
-              <span class="text-secondary">Me</span>
-            </h1>
-            <h2 class="sm-heading">
-              This is how you can reach me...
-            </h2>
-            <div class="boxes">
+        <section class="rellax" data-rellax-zindex="5" data-rellax-speed="2" id="contact">
+            <h4 class="lg-heading contact">
+              Contact Me
+            </h4>
+            <div class="boxes text-secondary">
               <div>
-                <span class="text-secondary">Email: </span> okpebhoo@gmail.com
+                <span>Email: okpebhoo@gmail.com</span>
               </div>
               <div>
                 <span class="text-secondary">Phone: </span> +234 902 8393 836
               </div>
               <div>
-                <span class="text-secondary">Address: </span> 8 Calistus Ude Street, Oke-Afa, Isolo, Lagos.
-              </div>
+                  <span class="text-secondary">Address: </span> 8 Calistus Ude Street, Oke-Afa, Isolo, Lagos.
+                </div>
             </div>
-          </main>
+        </section>
+        <footer class="footer">
+            <ul>
+                <li> Visit me @: </li>
+              <li>
+                <a href="https://codepen.io/GabOsaz/pens/public" target="_blank">
+                    <i class="fab fa-codepen fa-2x"></i>
+                </a>
+                </li>
+              <li>
+                <a href="https://github.com/GabOsaz" target="_blank">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://repl.it/@GabOsaz" target="_blank">
+                    <img src='img/replLogo.png' class='repl'/>
+                </a>
+              </li>
+              <li><a href="#">Back to top</a></li>
+            </ul>
+        </footer>
+    </div>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.projects', {
+                origin: 'left',
+                duration: 2000,
+                distance: '300px'
+            });
+            sr.reveal('.showcase', {
+                origin: 'top',
+                duration: 2000,
+                distance: '300px'
+            });
+            sr.reveal('#contact', {
+                origin: 'right',
+                duration: 2000,
+                distance: '300px'
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous"></script>
+        <script> let rellax = new Rellax('.rellax'); </script>
         <script src='index.js'></script>
     </body>
 </html>
