@@ -164,7 +164,7 @@ body {
   }
 
   .imgParent3::after  {
-    content: 'Technologies Featured: React, React-Redux, React Hooks, Bootstrap CSS. NodeJs, ExpressJs. App development still in progress...';
+    content: 'Technologies Featured: React, React-Redux, Bootstrap CSS. NodeJs, ExpressJs, MongoDB Atlas, Mongoose. The App development is still in progress...';
     position: absolute;
     top: 0;
     left: 0;
