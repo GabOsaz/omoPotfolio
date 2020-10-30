@@ -170,7 +170,7 @@ body {
   }
 
   .imgParent3::after  {
-    content: 'Technologies Featured: React, React-Redux, Bootstrap CSS. NodeJs, ExpressJs, MongoDB Atlas, Mongoose. The App development is still in progress...';
+    content: 'Technologies Featured: React, React-Redux, Bootstrap CSS. NodeJs, ExpressJs, MongoDB Atlas, Mongoose; The App development is still in progress...';
     position: absolute;
     top: 0;
     left: 0;
@@ -198,7 +198,7 @@ body {
   }
 
   .imgParent5::after  {
-    content: 'Technologies Featured: ReactJs, TailwindCss, Context API, React Hooks, Formik, Classnames, React-Chartjs-2. A live production App still in development, hence I can\'t reveal the source code';
+    content: 'Technologies Featured: ReactJs, TailwindCss, Context API, React Hooks, Formik, Classnames, React-Chartjs-2; A live production App still in development, hence I can\'t reveal the source code';
     position: absolute;
     top: 0;
     left: 0;
