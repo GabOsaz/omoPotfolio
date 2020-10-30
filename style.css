@@ -192,7 +192,7 @@ body {
   }
 
   .imgParent5::after  {
-    content: 'Technologies Featured: HTML5, CSS3';
+    content: 'Technologies Featured: ReactJs, TailwindCss, Context API, React Hooks, Formik, Classnames, React-Chartjs-2. A live production App still in development hence the source code is hosted on a private repo';
     position: absolute;
     top: 0;
     left: 0;

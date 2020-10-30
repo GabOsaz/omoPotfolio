@@ -64,7 +64,7 @@ function setBgGreet() {
 // Get Name
 function getName() {
   if (localStorage.getItem('name') === null) {
-    name.textContent = '[Enter Name]';
+    name.textContent = '[Click to Input your Name]';
   } else {
     name.textContent = localStorage.getItem('name');
   }
