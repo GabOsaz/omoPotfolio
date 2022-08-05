@@ -1,4 +1,4 @@
-body {
+  body {
     /* background: rgba(0, 0, 0, 0.9); */
     background: rgb(32, 28, 41);
     margin: 0;
@@ -15,15 +15,15 @@ body {
   } */
 
   a {
-    text-decoration: none;
-    color: #fff;
-    }
+  text-decoration: none;
+  color: #fff;
+  }
 
-    .showcase {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .showcase::after {
     content: '';
@@ -116,6 +116,8 @@ body {
   }
 
   .projects {
+    padding-left: 40px;
+    padding-right: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
     gap: 20px;
@@ -142,6 +144,32 @@ body {
     font-size: 1.2rem;
   }
 
+  .kappaImg::after  {
+    content: 'Technologies Featured: Nextjs, Context API, Chakra UI';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    
+    transition: all 1s ease-in-out;
+    height: 100%;
+    margin: 0;
+    z-index: 1
+  }
+  .koraImg::after  {
+    content: 'Technologies Featured: Nextjs, Context API, React Query, TailwindCSS';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    
+    transition: all 1s ease-in-out;
+    height: 100%;
+    margin: 0;
+    z-index: 1
+  }
   .imgParent1::after  {
     content: 'Technologies Featured: React, Context API, LESS';
     position: absolute;

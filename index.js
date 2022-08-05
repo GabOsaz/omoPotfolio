@@ -47,15 +47,18 @@ function setBgGreet() {
 
   if (hour < 12) {
     // Morning
-    showcase.style.backgroundImage = "url('img/evening.jpg')";
+    
+    // showcase.style.backgroundImage = "url('/img/morning.jpg')";
     greeting.textContent = 'Good Morning, ';
+    return;
   } else if (hour < 18) {
     // Afternoon
-    showPix.style.backgroundImage = "url(img/afternoon.jpg)";
     greeting.textContent = 'Good Afternoon, ';
+    // showPix.style.backgroundImage = "url(img/afternoon.jpg)";
+    return;
   } else {
     // Evening
-    showPix.style.backgroundImage = "url(img/evening.jpg)";
+    // showPix.style.backgroundImage = "url(img/evening.jpg)";
     greeting.textContent = 'Good Evening, ';
     document.body.style.color = 'white';
   }
@@ -109,7 +112,7 @@ name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
 
 const scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000
+  speed: 1000
 });
 
 // Run
