@@ -198,7 +198,7 @@
   }
 
   .imgParent3::after  {
-    content: 'Technologies Featured: React, ContextAPI, NodeJs, ExpressJs, MongoDB Atlas, Mongoose, Formik, Protected Routing';
+    content: 'Technologies Featured: React, ContextAPI, NodeJs, ExpressJs, MongoDB Atlas, Mongoose, Formik, Protected Routing. Login credentials: email:admin@example.com; password: admin123';
     position: absolute;
     top: 0;
     left: 0;
